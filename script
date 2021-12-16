@@ -1,0 +1,12 @@
+##First I run 
+
+docker run -p 8080:8080 -p 50000:50000 -d  -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+
+#Then use docker ps to see if its running
+
+docker ps
+
+#docker log *CONTAINER_ID_HERE*
+
+#Crtl C at the password in the log, opens browser and go to: localhost:8080 and install recommended plugins
+
